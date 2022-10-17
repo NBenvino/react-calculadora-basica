@@ -1,4 +1,4 @@
-import Boton from "Boton";
+import Boton from "./Boton.jsx";
 import React, { useState } from "react";
 
 export default function Calculadora() {
