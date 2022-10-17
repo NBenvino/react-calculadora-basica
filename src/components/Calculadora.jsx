@@ -27,9 +27,9 @@ export default function Calculadora() {
   };
 
   const action = () => {
-    if (operation !== "") {
-      let front = parseFloat(numFront);
-      let back = parseFloat(numBack);
+    let front = parseFloat(numFront);
+    let back = parseFloat(numBack);
+    if (operation !== "" && !Number.isNaN(front) && !Number.isNaN(back)) {
       switch (operation) {
         case "%":
           setNumBack((back * front) / 100);
@@ -47,6 +47,7 @@ export default function Calculadora() {
           setNumBack(front + back);
           break;
       }
+      setOperation("");
       clear();
     }
   };

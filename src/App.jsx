@@ -1,5 +1,5 @@
 import Calculadora from "./components/Calculadora";
-import "./App.css";
+import "./style.css";
 
 export default function App() {
   return <Calculadora />;
